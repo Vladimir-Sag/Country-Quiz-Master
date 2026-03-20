@@ -11,8 +11,17 @@ export function useFetchQuestion(){
 
         async function fetchData() {
             try{
-                const res = await fetch(url,{signal})
-                const countries = await res.json()
+                let countries;
+                const cashedData = localStorage.getItem('countries_data');
+                if(cashedData){
+                    countries = JSON.parse(cashedData)
+                }else{
+                    const res = await fetch(url,{signal})
+                    countries = await res.json()
+                    localStorage.setItem('countries_data',JSON.stringify(countries))
+                }
+                
+                
                 const tenCountries = shuffleArray(countries).slice(0,10);
                 const questions = generateQuestion(tenCountries);
                 setResult(questions);

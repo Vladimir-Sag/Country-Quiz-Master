@@ -53,8 +53,8 @@ export default function ButtonsWithAnswer({answers,answerSelected,correctPoints,
                     key={index}
                     onClick={()=>handleOnClick(item,index)}
                 >{item}<span>
-                    {showRightAnswer&&(index===answerItem)&&<img src="/resources/Check_round_fill.svg" />}
-                        {(item!==rightAnswer)&&(index===showWrongAnswer)&&<img src="/resources/Close_round_fill.svg"/>
+                    {showRightAnswer&&(index===answerItem)&&<img src="/resources/Check_round_fill.svg" alt="right answer"/>}
+                        {(item!==rightAnswer)&&(index===showWrongAnswer)&&<img src="/resources/Close_round_fill.svg" alt="wrong answer"/>
                     }
                     </span>
                 </button>

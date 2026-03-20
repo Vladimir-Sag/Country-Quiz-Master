@@ -3,8 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/x-icon" href="./resources/favicon.ico" />
+    <link rel="preload" href="/fonts/Be_Vietnam_Pro/BeVietnamPro-Medium.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preconnect" href="https://restcountries.com">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Country Quiz Master"/>
     <title>country-quiz-master</title>
+    <style>
+      body{
+        background-image: url(../resources/bg-sm.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      @media (min-width: 1024px) {
+        body{
+          background-image: url(../resources/bg.webp);
+        }
+      }
+    </style>
   </head>
   <body>
     <div id="root"></div>
