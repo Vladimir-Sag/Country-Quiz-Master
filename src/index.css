@@ -1,0 +1,233 @@
+@font-face {
+  font-family: 'Be Vietnam Pro';
+  src: url('/fonts/Be_Vietnam_Pro/BeVietnamPro-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  
+}
+
+
+@font-face {
+  font-family: 'Be Vietnam Pro';
+  src: url('/fonts/Be_Vietnam_Pro/BeVietnamPro-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'Be Vietnam Pro';
+  src: url('/fonts/Be_Vietnam_Pro/BeVietnamPro-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+:root{
+  --heading-large: 500 1.5rem 'Be Vietnam Pro', sans-serif;
+  --heading-medium: 600 1.25rem 'Be Vietnam Pro', sans-serif;
+  --subheading-semibold: 600 1rem 'Be Vietnam Pro', sans-serif;
+  --subheading-medium: 500 1rem 'Be Vietnam Pro', sans-serif;
+  --text-bold: 700 0.875rem 'Be Vietnam Pro', sans-serif;
+
+  --main-gradient: linear-gradient(#E65895, #BC6BE8);
+
+  --primary-dark: #393F6E;     
+  --primary-darker: #343964;     
+  --primary-light: #E2E4F3;      
+
+  --accent-blue: #3E9FFF;      
+  --accent-red: #DD524C;         
+  --accent-beige: #FFECC8;       
+
+  --gray-medium: #8B8EAB;
+}
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Be Vietnam Pro",system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+  background-image: url(../resources/bg-sm.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 105px 24px;
+}
+/* Question.jsx */
+.hero-container{
+  display: flex;
+  justify-content: space-between;
+  max-width: 820px;
+  width: 100%;
+  margin-inline: auto;
+}
+.hero-title{
+  color: var(--primary-light);
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 0.005em;
+}
+.hero-image{
+  width: 18px;
+  transform: translate(-11px,2px);
+}
+.hero-score{
+  padding:6px 17px 8px 27px;
+  display: inline-block;
+  border-radius: 20px;
+  background: var(--main-gradient);
+  color: var(--primary-light);
+  transform: translateY(-3px);
+}
+
+/* Numbers */
+.number-question{
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  color: var(--primary-light);
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-user-select: none;
+  user-select: none;
+}
+/* Quiz */
+.container{
+  margin-block-start: 38px;
+  padding: 24px 0;
+  width: 100%;
+  max-width: 820px;
+  background-color: var(--primary-dark);
+  min-height: 308px;
+  height: auto;
+  border-radius: 12px;
+  margin-inline: auto;
+}
+.number-container{
+  display: flex;
+  gap:12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+/* buttons with answer */
+.container-for-buttons{
+  display: flex;
+  padding-block-start: 32px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.question-text{
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--primary-light);
+  text-align: center;
+}
+
+.question-image{
+  width: 18px;
+  margin-inline: 3px 2px;
+  margin-block-end: 3px;
+}
+.buttons-answers{
+  padding-inline: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap:12px;
+  margin-block-start: 40px;
+  justify-content: center;
+}
+.button-for-question{
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 60px;
+  height: auto;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:10px;
+  border: none;
+  background: var(--primary-darker);
+  color: var(--primary-light);
+  font-size: 1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.button-for-question.clicked{
+  background: var(--main-gradient);
+}
+
+/* congatulation */
+.congratulation{
+  margin-inline: auto;
+  width: calc(100% - 40px);
+  max-width: 400px;
+  background-color: var(--primary-dark);
+  padding: 20px;
+  border-radius: 10px;
+}
+.congratulation figure{
+  text-align: center;
+  width: 100%;
+}
+.congratulation figure img{
+  width: 100%;
+}
+.congratulation h2{
+  text-align: center;
+  color: var(--primary-light);
+  font-weight: 400;
+  padding: 15px;
+}
+.congratulation p{
+  text-align: center;
+  color:var(--primary-light);
+}
+.congratulation button{
+  background: var(--main-gradient);
+  margin: 40px auto;
+}
+@media (min-width: 1024px) {
+  body{
+    background-image: url(../resources/bg.jpg);
+    padding: 214px 0;
+  }
+  .hero-title{
+    font-size: 2rem;
+  }
+  .hero-score{
+    margin-block-end: 2px;
+    align-self: flex-end;
+    transform: translateY(0);
+  }
+  .container{
+    margin-block-start: 40px;
+    padding: 62px 0;
+  }
+  .question-text{
+    font-weight: 700;
+    padding-inline: 62px;
+    letter-spacing: -0.01em;
+  }
+  .container-for-buttons{
+    padding-inline: 146px;
+  }
+  .buttons-answers{
+    padding-inline: 0;
+    align-self: start;
+    gap:24px;
+    justify-content: flex-start;
+  }
+  .button-for-question{
+    width: 240px;
+  }
+  .congratulation h2{
+    padding: 15px 35px;
+  }
+}
