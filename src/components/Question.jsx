@@ -30,7 +30,7 @@ export default function Question(){
                     <h1 className="hero-title">Country Quiz</h1>
                     <p className="hero-score">
                         <span>
-                            <img src="./resources/cup.png" alt="cup" className="hero-image" loading="lazy"/>
+                            <img src="/resources/cup.png" alt="cup" className="hero-image" loading="lazy"/>
                         </span>
                         {rightPoints}/10 Points
                     </p>

@@ -3,7 +3,7 @@
 ![Thumbnail for the Country Quiz coding challenge](./thumbnail.jpg)
 
 ## 🎯 Live Demo
-🔗 [View Live Demo](https://country-quiz-your-username.vercel.app)  
+🔗 [View Live Demo](https://country-quiz-master-five.vercel.app/)  
 📦 [GitHub Repository](https://github.com/Vladimir-Sag/Country-Quiz-Master)
 
 ---
