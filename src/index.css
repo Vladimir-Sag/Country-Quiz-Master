@@ -107,6 +107,7 @@ body{
   margin-inline: auto;
 }
 .number-container{
+  padding-inline: 1px;
   display: flex;
   gap:12px;
   justify-content: center;
@@ -209,6 +210,9 @@ body{
   .container{
     margin-block-start: 40px;
     padding: 62px 0;
+  }
+  .number-container{
+    padding-inline: 0;
   }
   .question-text{
     font-weight: 700;
